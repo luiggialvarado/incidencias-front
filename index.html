@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidencias de máquinas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Incidencias de máquinas</h1>
+    </header>
+    <main>
+        <p id="mensaje" role="status"></p>
+
+        <section>
+            <h2>Nueva máquina</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="tipo">Tipo</label>
+            <input type="text" id="tipo" name="tipo" required>
+            <label for="zona">Zona</label>
+            <input type="text" id="zona" name="zona" required>
+            <button id="btn-guardar-maquina">Guardar máquina</button>
+        </section>
+
+        <section>
+            <h2>Máquinas</h2>
+            <ul id="lista-maquinas"></ul>
+        </section>
+
+        <section id="panel-incidencias">
+            <h2 id="titulo-incidencias"></h2>
+            <ul id="lista-incidencias"></ul>
+            <label for="descripcion">Descripción de la incidencia</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+            <button id="btn-guardar-incidencia">Guardar incidencia</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

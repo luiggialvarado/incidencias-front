@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f1f4f8;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+header {
+  border-bottom: 3px solid #1d4ed8;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #1e3a8a;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #1e3a8a;
+}
+
+section {
+  margin-bottom: 16px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 8px 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #6b7280;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus,
+button:focus {
+  outline: 3px solid #1e3a8a;
+  outline-offset: 2px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Botones de los formularios */
+section > button {
+  display: block;
+  margin-top: 16px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+}
+
+section > button:hover {
+  background-color: #1e40af;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Botón "Ver incidencias" */
+li button {
+  background-color: white;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+}
+
+li button:hover {
+  background-color: #eff6ff;
+}
+
+#panel-incidencias {
+  display: none;
+}
+
+#mensaje {
+  min-height: 1.5em;
+  margin: 0 0 12px 0;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  section {
+    padding: 14px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
